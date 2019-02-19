@@ -10,7 +10,7 @@
     Matthias Meier}
 
 \fssummary{
-In einem bestehenden System zur Fernsteuerung von Kameras das bei der Produktion von Fernsehinhalten bei Liveübertragung zum Einsatz kommt, soll der zentrale Steuerkontroller mit neuer leistungsfähigerer Hardware entwickelt werden.
+In einem bestehenden System zur Fernsteuerung von Kameras das bei der Produktion von Fernsehinhalten bei Liveübertragung eingesetzt wird, soll der zentrale Steuerkontroller mit neuer leistungsfähigerer Hardware entwickelt werden.
 }
 
 \fsgraphics{
@@ -35,6 +35,8 @@ In einem bestehenden System zur Fernsteuerung von Kameras das bei der Produktion
     Als Kernsystem soll ein embedded Linux dienen. Um die Machbarkeit aller Anforderungen aufzuzeigen wurde mit einem Raspberry Pi3+ gearbeitet. Dieses Board hat genügend Rechenleistung und verfügt über alle gängigen Schnittstellen wie Ethernet, I2C und SPI. Auf dem Touchdisplay läuft ein auf dem Qt Framework basierendes GUI. Es konnte erfolgreich mit dem bestehenden System über die vorgegebenen Protokollstruktur über UDP kommuniziert werden. Das System ist selbst ohne spezielle Kerneloptimierungen Soft-Realtime fähig.
 }
 
+
+
 \infobox{Eckwerte vom Prototypensystem}{%
     \begin{minipage}[t][][b]{0.45\textwidth}
         \includegraphics[width=\textwidth]{images/Blockschaltbild}
@@ -44,7 +46,7 @@ In einem bestehenden System zur Fernsteuerung von Kameras das bei der Produktion
     	\begin{itemize}
     		\item Architektur: Embedded Linux (Raspberry Pi3+, ARM Cortex-A53)
     		\item Reaktionszeit: System $25\mu s$, Toucheingaben $3ms$
-    		\item Ethernetanbindung ans BBM Net
+    		\item Ethernetanbindung ans BBMNet
     		\item Custom Rotary Encoder SW \& HW (Attiny45) für möglichst ressourcenschonende Ansteuerung über I2C
     		\item 3-Achsen USB Joystick zur Kamerakopfsteuerung
     		\item 5 Zoll Kapazitives Touch Display mit state-of-the-art GUI (Qt)
